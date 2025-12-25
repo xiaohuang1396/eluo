@@ -72,6 +72,84 @@ class Piece {
             moveSound.play().catch(e => console.log('旋转音效播放失败:', e));
         }
     }
+ // 旋转方块
+    rotate() {
+        const rotated = [];
+        const rows = this.shape.length;
+        const cols = this.shape[0].length;
+        
+        for (let i = 0; i < cols; i++) {
+            rotated[i] = [];
+            for (let j = 0; j < rows; j++) {
+                rotated[i][j] = this.shape[rows - 1 - j][i];
+            }
+        }
+        
+        const temp = this.shape;
+        this.shape = rotated;
+        
+        // 检查旋转后是否碰撞，如果碰撞则恢复原状
+        if (this.collision()) {
+            this.shape = temp;
+        } else {
+            // 播放移动音效
+            moveSound.volume = 0.5;
+            moveSound.currentTime = 0;
+            moveSound.play().catch(e => console.log('旋转音效播放失败:', e));
+        }
+    }
+ // 旋转方块
+    rotate() {
+        const rotated = [];
+        const rows = this.shape.length;
+        const cols = this.shape[0].length;
+        
+        for (let i = 0; i < cols; i++) {
+            rotated[i] = [];
+            for (let j = 0; j < rows; j++) {
+                rotated[i][j] = this.shape[rows - 1 - j][i];
+            }
+        }
+        
+        const temp = this.shape;
+        this.shape = rotated;
+        
+        // 检查旋转后是否碰撞，如果碰撞则恢复原状
+        if (this.collision()) {
+            this.shape = temp;
+        } else {
+            // 播放移动音效
+            moveSound.volume = 0.5;
+            moveSound.currentTime = 0;
+            moveSound.play().catch(e => console.log('旋转音效播放失败:', e));
+        }
+    }
+ // 旋转方块
+    rotate() {
+        const rotated = [];
+        const rows = this.shape.length;
+        const cols = this.shape[0].length;
+        
+        for (let i = 0; i < cols; i++) {
+            rotated[i] = [];
+            for (let j = 0; j < rows; j++) {
+                rotated[i][j] = this.shape[rows - 1 - j][i];
+            }
+        }
+        
+        const temp = this.shape;
+        this.shape = rotated;
+        
+        // 检查旋转后是否碰撞，如果碰撞则恢复原状
+        if (this.collision()) {
+            this.shape = temp;
+        } else {
+            // 播放移动音效
+            moveSound.volume = 0.5;
+            moveSound.currentTime = 0;
+            moveSound.play().catch(e => console.log('旋转音效播放失败:', e));
+        }
+    }
 
     // 检查碰撞
     collision() {
