@@ -4,7 +4,6 @@ const ROWS = 20;
 const BLOCK_SIZE = 30;
 const COLORS = [
     null,
-    '#FF8E0D',  // 橙色
     '#FFE138',  // 黄色
     '#3877FF'   // 青色
 ];
