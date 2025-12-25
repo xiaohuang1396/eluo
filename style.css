@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #0f3460;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.score, .next-piece {
+    background-color: #0f3460;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+.score h3, .next-piece h3 {
+    margin-bottom: 10px;
+    color: #e94560;
+}
+
+#score {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#nextCanvas {
+    border: 2px solid #e94560;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+#gameCanvas {
+    border: 3px solid #e94560;
+    background-color: #000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls p {
+    margin: 5px 0;
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+#restartBtn {
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#restartBtn:hover {
+    background-color: #c7365f;
+}
+
+#restartBtn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .game-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .score, .next-piece {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    
+    #gameCanvas {
+        width: 90%;
+        height: auto;
+    }
+}
