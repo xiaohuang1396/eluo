@@ -4,7 +4,6 @@ const ROWS = 20;
 const BLOCK_SIZE = 30;
 const COLORS = [
     null,
-    '#F538FF',  // 紫色
     '#FF8E0D',  // 橙色
     '#FFE138',  // 黄色
     '#3877FF'   // 青色
@@ -20,7 +19,7 @@ piggyImage.src = PIGGY_IMAGE_DATA;
 // 方块形状定义
 const SHAPES = [
     [],
-    [[1, 1, 1]],  // I形
+    [[1, 1]],  // I形
     [[1, 1], [1, 1]],  // O形
     [[0, 1, 0], [1, 1, 1]],  // T形
     [[1, 0, 0], [1, 1]],  // L形
